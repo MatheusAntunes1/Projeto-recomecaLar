@@ -1,0 +1,139 @@
+.slider{
+    margin:0 auto;
+    width: 98.5vw;
+    height:550px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+   
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+
+    position: relative;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 98.5vw;
+    object-fit: cover;
+   
+    height: 550px;
+
+}
+
+.manual-navigation{
+    padding: 2%;
+    position: absolute;
+    width: 98.5vw;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border:2px solid #F5F5DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #D2B48C;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border:2px solid #C06C00;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.navigation-auto{
+    padding: 2%;
+    position: absolute;
+    width: 98.5vw;
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #C06C00;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #C06C00;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #C06C00;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #C06C00;
+}
+
+@media(max-width:600px){
+    .slider{
+     
+        width: 98vw;
+        height:180px;
+        overflow: hidden;
+    }
+    
+    .slide img{
+        width: 98vw;
+        object-fit: cover;
+        height: 180px;
+    
+    }
+
+
+    .manual-navigation{
+     
+        margin-top: -250px;
+       
+    }
+
+    .navigation-auto{
+      
+        margin-top: 150px;
+        
+    }
+}
+

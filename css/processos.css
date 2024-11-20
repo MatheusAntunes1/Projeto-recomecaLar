@@ -1,0 +1,70 @@
+.processosBg {
+  background-image: url(../img/fundoProcesso.png);
+  background-size: cover;
+  height: 80vh;
+}
+.processo-content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.processosBg h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.processos {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  padding: 50px 0;
+  color: #fff;
+}
+
+.umitem {
+  padding: 40px 0;
+  grid-column: 1/-1;
+}
+
+.doisItem {
+  padding: 40px 0;
+  grid-column: 2/-1;
+}
+
+.item3 {
+  padding: 20px 0;
+}
+
+.processos p {
+  font-size: 30px;
+}
+
+.processos-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 630px) {
+  .doisItem {
+    padding: 2px 0;
+    grid-column: 1/-1;
+  }
+  .processos {
+    padding: 0;
+  }
+  .processosBg h1 {
+    padding-top: 0.5rem;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .processosBg {
+    height: 100%;
+  }
+
+  .processos p {
+    font-size: 1.5rem;
+  }
+}

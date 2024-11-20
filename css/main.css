@@ -1,0 +1,233 @@
+.servicos {
+  padding: 50px 20px;
+  background-color: #D2B48C;
+  text-align: center;
+  color: #fff;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Grid de serviços */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Card de serviço */
+.card-servico {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.card-servico h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-servico p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Efeito de hover */
+.card-servico:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #D2B48C;
+  color: #fff;
+}
+
+.card-servico {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+
+
+/*
+main {
+  background-color: #ff872b;
+}
+
+.servicos-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.titulo-servico {
+  grid-column: 1/-1;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+.conteudo {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 20px;
+  padding: 20px 50px 20px 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation-duration: 6s;
+  animation-name: slide1;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide1 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.conteudo-2 {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px 20px 50px;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  animation-duration: 6s;
+  animation-name: slide2;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.texto {
+  width: 60ch;
+}
+
+.texto-2 {
+  width: 60ch;
+  text-align: end;
+}
+
+.texto h2,
+.texto-2 h2 {
+  line-height: 1.5;
+}
+
+.texto p,
+.texto-2 p {
+  padding-bottom: 40px;
+  font-size: 1.25rem;
+}
+
+.imagem img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+  box-shadow: 1px 1px 15px green;
+}
+
+.imagem-2 img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 1px 1px 15px green;
+}
+
+.servicos-main .btn {
+  padding: 20px;
+  display: inline-block;
+  background-color: #e76e11;
+  color: #fff;
+}
+
+.servicos-main .btn:hover {
+  background-color: blue;
+}
+
+@media (max-width: 1200px) {
+  .conteudo,
+  .conteudo-2 {
+    padding: 20px 0;
+    gap: 5px;
+  }
+
+  .texto p,
+  .texto-2 p {
+    padding-bottom: 10px;
+  }
+
+  .texto-2 {
+    text-align: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-servico {
+    font-size: 3rem;
+
+    padding: 20px 0;
+  }
+
+  .conteudo,
+  .conteudo-2 {
+    justify-content: left;
+  }
+
+  .imagem img,
+  .imagem-2 img {
+    /* width: 80%; */
+    /*
+    height: 250px;
+  }
+
+  .texto,
+  .texto-2 {
+    width: 250px;
+  }
+
+  .texto-2 p {
+    /* font-size: clamp(1em, 1em + 1vw, 1.5em); */
+    /*
+    font-size: clamp(0.8em, 0.8em + 1vw, 1.5em);
+  }
+
+  .texto p {
+    font-size: clamp(0.8em, 0.8em + 1vw, 1.5em);
+  }
+
+  .texto-2 h2 {
+    font-size: 1.5rem;
+  }
+}
+*/

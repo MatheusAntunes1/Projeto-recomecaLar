@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Recomeço lar , sua nova vida começa aqui</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logoR.png" type="image/x-icon">
+   
+    
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img src="./img/logoR.png" alt="Recomeço Lar"></a>
+        <nav id="nav">
+            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul class="main-nav" id="menu" role="menu">
+                <li class="nav-links"><a href="./index.html">Home</a></li>
+                <li class="nav-links"><a href="#servicos">Serviços</a></li>
+                <li class="nav-links"><a href="./pagina-simulacao.html">Cadastro</a></li>
+                <li class="nav-links">
+                    <button id="qrButton" class="qrButton">Doação</button>
+                </li>
+                <li class="nav-links"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Modal para o QR Code -->
+    <div id="qrModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Doação via QR Code</h2>
+            <img src="img/servicos/QRCode_Fácil.svg" alt="QR Code para doação">
+            <p>Escaneie o QR Code para realizar sua doação.</p>
+        </div>
+    </div>
+    <section>
+        <div class="slider">
+
+            <div class="slides">
+                <!-- radius button -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- fim radius button -->
+
+                <!-- slide images -->
+                <div class="slide first">
+                    <img src="./img/banner-01.png" alt="modelo1">
+                </div>
+
+                <div class="slide">
+                    <img src="./img/banner-01.png" alt="modelo2">
+                </div>
+
+                <div class="slide">
+                    <img src="./img/banner-01.png" alt="modelo3">
+                </div>
+                
+                <div class="slide">
+                    <img src="./img/banner-01.png" alt="modelo4">
+                </div> 
+
+                <!-- fim slide images -->
+                
+                
+                <!-- navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+            
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- conteudo serviços -->
+    <main id="servicos">
+        <section class="servicos">
+            <h1 class="titulo">Nossos Serviços</h1>
+            <div class="grid-servicos">
+                <!-- Serviço 1 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/acolhimento.jpg" alt="Acolhimento">
+                    <h2>Acolhimento Inicial</h2>
+                    <p>Recebemos os residentes com um plano de integração e apoio emocional.</p>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/terapia.jpg" alt="Terapia em Grupo">
+                    <h2>Terapia em Grupo</h2>
+                    <p>Sessões semanais para compartilhar experiências e fortalecer laços.</p>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/medico.jpg" alt="Atendimento Psicológico">
+                    <h2>Atendimento Psicológico</h2>
+                    <p>Suporte psicológico individualizado para recuperação emocional.</p>
+                </div>
+                <!-- Serviço 4 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/Atividades-Recreativas.jpg" alt="Atividades Recreativas">
+                    <h2>Atividades Recreativas</h2>
+                    <p>Promovemos esportes, artes e lazer para uma vida mais saudável.</p>
+                </div>
+                <!-- Serviço 5 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/profissional.jpg" alt="Capacitação Profissional">
+                    <h2>Capacitação Profissional</h2>
+                    <p>Preparamos os residentes para reintegração no mercado de trabalho.</p>
+                </div>
+                <!-- Serviço 6 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/apoio-familia.jpg" alt="Apoio Familiar">
+                    <h2>Apoio Familiar</h2>
+                    <p>Trabalhamos a relação dos residentes com suas famílias para promover reconciliação.</p>
+                </div>
+                <!-- Serviço 7 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/medico.jpg" alt="Assistência Médica">
+                    <h2>Assistência Médica</h2>
+                    <p>Oferecemos acompanhamento médico e suporte à saúde física.</p>
+                </div>
+                <!-- Serviço 8 -->
+                <div class="card-servico">
+                    <img src="./img/servicos/reitegracao.jpg" alt="Programa de Reinserção Social">
+                    <h2>Reinserção Social</h2>
+                    <p>Ajudamos na reintegração do residente à sociedade com suporte contínuo.</p>
+                </div>
+                <!-- Serviço 9 -->
+                <div class="card-servico">
+                    <img src="./img/espiritualidade.jpg" alt="Apoio Espiritual">
+                    <h2>Apoio Espiritual</h2>
+                    <p>Encorajamos o desenvolvimento espiritual para fortalecimento interno.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+<!-- maps -->
+<section class="map">
+    <a href="https://www.google.com/maps/place/R.+D+Abreu+Medeiros,+Sorocaba+-+SP,+18013-290/@-23.4986261,-47.44945,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf601fa48ed021:0x593ad24f166594ae!8m2!3d-23.498631!4d-47.4468697!16s%2Fg%2F1ymwwflf2?authuser=0&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9412349053646!2d-47.449449988324275!3d-23.498626059203634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf601fa48ed021%3A0x593ad24f166594ae!2sR.%20D%20Abreu%20Medeiros%2C%20Sorocaba%20-%20SP%2C%2018013-290!5e0!3m2!1spt-BR!2sbr!4v1732116433898!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </a>
+</section>
+
+
+    <!-- footer -->
+    <footer id="contato">
+        <div id="footer" class="footer0">
+          
+       
+            
+           
+          </div>
+        </div>
+        <div class="footer2">
+          <div class="img">
+            <img src="./img/logoR.png" alt="recomeço lar">
+          </div>
+          <div class="services">
+            <div class="heading">Contato</div>
+            <div class="div"><a href="tel:+1599999-9999">(15) 99999-9999</a></div>
+            <div class="div"><a href="tel:+1599999-9999">(15) 99999-9999</a></div>
+            <div class="div"> <a href="mailto:lardoselar">seunovolar@gmail.com.br</a></div>
+            
+          </div>
+        
+          <div class="header-footer">
+            <div class="heading">Menu</div>
+            <div class="div"><a href="#servico">Serviços</a></div>
+            <!-- <div class="div">Politica de privacidade</div>
+            <div class="div">termos de uso</div> -->
+
+            <div class="div"><a href="pagina-simulacao.html" target="_blank">Cadastro</a></div>
+            <div class="div">Perguntas frequentes</div>
+            
+            
+          </div>
+
+          <div class="header-footer">
+            <div class="heading">Endereço</div>
+             <div>
+                <a href="https://www.google.com.br/maps/place/Cond.+Edif.+Francisco+Gimenes+-+Av.+Gen.+Carneiro,+803+-+Vila+Lucy,+Sorocaba+-+SP,+18043-003/@-23.5045703,-47.4783369,17z/data=!3m1!4b1!4m5!3m4!1s0x94c58ac481c82637:0xabb05e0241e91b26!8m2!3d-23.5045752!4d-47.4761482">
+                    Seu novo Lar<br>Rua D'Abreu medeiros - Além ponte<br> Sorocaba-SP, 18013-090
+                </a>
+             </div>    
+          </div>
+        </div>
+    </div>
+    <div class="footer1 ">
+        <h2>Siga nossas midias sociais</h2>
+      
+      
+      <div class="social-media">
+
+        <a href="https://www.instagram.com/mainardesassessoria/" target="_blank">
+            <i  class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100063718676137&paipv=0&eav=AfaleOTiGHgdvXs1hgODyFhXrSVK8NghDqQogEmTqpJ3Ogl3JbNgh1jIMKsos5austk" target="_blank">
+            <i  class="fa fa-facebook"></i>
+        </a>
+    </div>
+        <div class="copyright">Copyright © <h4>Seu novo Lar</h4> 2022</div>
+      </footer>
+    
+    <script src="./js/script.js"></script>
+    <script src="./js/scriptMenu.js"></script>
+    <script src="./js/scriptQrcode.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/5515988198324" target="_blank" 
+        style="
+        position:fixed;
+        width:60px;height:60px;
+        bottom:100px;
+        right:40px;
+        background-color:#1bb63d;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+    
+</body>
+</html>

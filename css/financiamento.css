@@ -1,0 +1,92 @@
+.financiamento {
+  background-color: #f08535;
+  padding: 20px;
+}
+.financiamento-titulo h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.financiamento-conteudo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+  align-items: center;
+}
+
+.financiamento-conteudo img {
+  border-radius: 12px;
+}
+
+.financiamento-conteudo ul {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.atendimento h2 {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.atendimento ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-banco img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.financimento-item li::before {
+  content: "";
+  background-image: url("../img/separador/ok.svg");
+  background-repeat: no-repeat;
+
+  width: 55px;
+  height: 30px;
+  margin-left: 20px;
+  display: block;
+  float: left;
+}
+
+@media (max-width: 700px) {
+  .financiamento-titulo h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .financiamento-conteudo ul {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .financiamento-titulo h1 {
+    font-size: 1.5rem;
+  }
+
+  .financiamento-conteudo ul {
+    font-size: 1rem;
+  }
+
+  .financimento-item li {
+    padding: 10px 0;
+  }
+
+  .logo-banco img {
+    width: 70px;
+  }
+
+  .financiamento-conteudo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}

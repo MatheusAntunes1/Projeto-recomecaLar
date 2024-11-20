@@ -1,0 +1,198 @@
+.fundoSimulacao {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 131, 65);
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--corPrincipal);
+  padding: 1rem;
+}
+
+.form-image img {
+  width: 31rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(19, 24, 19);
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.form-header h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: orange;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  margin: 0.2rem 0;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  align-items: center;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee7e;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid orange;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000c0;
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding: 0 0.5rem;
+  gap: 20px;
+}
+
+.gender-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.9rem;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.1rem;
+}
+
+.gender-input label {
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: var(--corPrincipal);
+  padding: 0.62rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: #eeeeee7e;
+}
+
+.button button {
+  font-size: 1.5rem;
+  font-weight: 500px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .input-group {
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 40rem;
+    padding-right: 2rem;
+  }
+
+  .gender-group {
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .button {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+  }
+  .fundoSimulacao {
+    height: initial;
+  }
+}

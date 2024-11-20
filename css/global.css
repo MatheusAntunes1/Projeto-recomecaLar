@@ -1,0 +1,40 @@
+:root{
+    --corPrincipal:#D2B48C;
+    --corSecundaria:#E2725B;
+    --corTerceira:#F5F5DC;
+    --cor3:#D2B48C;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    /* min-height: 100vh;
+    min-width: 100vw; */
+    overflow-x: hidden;
+    
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    color: inherit;
+    
+   
+    
+}
+
+
